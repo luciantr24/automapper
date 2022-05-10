@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "d4FoFzZOVzx3sWLqewQkcmJFcDY2pRQoQL/QS0lv5spgAC1y3cZlBCLmPJr1Z2woiWrOwhWDFGhK0IBBzJwpxg==",
+  "success": true,
+  "projectFilePath": "/Users/luciant/RiderProjects/automapper/automapper/automapper.csproj",
+  "expectedPackageFiles": [
+    "/Users/luciant/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

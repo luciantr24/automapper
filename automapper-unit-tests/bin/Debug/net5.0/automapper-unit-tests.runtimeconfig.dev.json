@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/luciant/.dotnet/store/|arch|/|tfm|",
+      "/Users/luciant/.nuget/packages"
+    ]
+  }
+}
