@@ -1,42 +1,59 @@
 using automapper;
 using automapper_unit_tests.TestModels;
-using automapper.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace automapper_unit_tests
 {
-    public class First
-    {
-        public string Name { get; set; }
-        public int Value { get; set; }
-    }
-
-    public class Second
-    {
-        public string Name { get; set; }
-    }
-    
     [TestClass]
     public class AutoMapperUnitTests
     {
-        [TestMethod]
-        public void Mapping_Success()
+        private User _userTestData;
+
+        [TestInitialize]
+        public void Initialize()
         {
-            var user = new User
+            _userTestData = new User
             {
                 Id = 10000,
                 Name = "Test User Name",
                 Status = true
             };
-            
+        }
+
+        [TestMethod]
+        public void Mapping_Out_In_Success()
+        {
             var autoMapper = new AutoMapper(config =>
             {
                 config.Add<UserDto, User>();
             });
 
-            var userDto = autoMapper.Map<UserDto, User>(user);
+            var userDto = autoMapper.Map<UserDto, User>(_userTestData);
             
-            Assert.AreEqual(user.Name, userDto.Name);
+            Assert.AreEqual(_userTestData.Name, userDto.Name);
+        }
+
+        [TestMethod]
+        public void Mapping_Out_Success()
+        {
+            var autoMapper = new AutoMapper(config =>
+            {
+                config.Add<UserDto, User>();
+            });
+
+            var userDto = autoMapper.Map<UserDto>(_userTestData);
+
+            Assert.AreEqual(_userTestData.Name, userDto.Name);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception), "Source or Destionation can't be null or empty")]
+        public void Mapping_Settings_Null_Or_Empty()
+        {
+            var autoMapper = new AutoMapper(config => { });
+
+            var result = autoMapper.Map<UserDto, User>(_userTestData);
         }
     }
 }

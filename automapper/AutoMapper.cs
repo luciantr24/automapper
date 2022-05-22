@@ -30,9 +30,9 @@ namespace automapper
             return JsonConvert.DeserializeObject<T>(serializedInput);
         }
         
-        public T Map<T>(dynamic input)
+        public T Map<T>(object input)
         {
-            var isMappingAllowed = CheckIfMappingIsAllowed(typeof(T).Name, "");
+            var isMappingAllowed = CheckIfMappingIsAllowed(typeof(T).Name, input.GetType().Name);
 
             if (!isMappingAllowed) throw new Exception("Mapping between objects was not defined");
             
@@ -40,9 +40,11 @@ namespace automapper
 
             return JsonConvert.DeserializeObject<T>(serializedInput);
         }
-        
+
         private bool CheckIfMappingIsAllowed(string from, string to)
         {
+            if (_allowedMappings.Count == 0) throw new Exception("No relationships have been provided");
+
             var map = _allowedMappings.Where(_ =>
                 _.From == from && _.To == to).Select(_ => _).FirstOrDefault();
 

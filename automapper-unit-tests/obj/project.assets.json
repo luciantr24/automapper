@@ -5840,32 +5840,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/luciant/.nuget/packages/": {}
+    "C:\\Users\\lucian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luciant/RiderProjects/automapper/automapper-unit-tests/automapper-unit-tests.csproj",
+      "projectUniqueName": "C:\\Projects\\automapper\\automapper-unit-tests\\automapper-unit-tests.csproj",
       "projectName": "automapper-unit-tests",
-      "projectPath": "/Users/luciant/RiderProjects/automapper/automapper-unit-tests/automapper-unit-tests.csproj",
-      "packagesPath": "/Users/luciant/.nuget/packages/",
-      "outputPath": "/Users/luciant/RiderProjects/automapper/automapper-unit-tests/obj/",
+      "projectPath": "C:\\Projects\\automapper\\automapper-unit-tests\\automapper-unit-tests.csproj",
+      "packagesPath": "C:\\Users\\lucian\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\automapper\\automapper-unit-tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/luciant/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\lucian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/luciant/RiderProjects/automapper/automapper/automapper.csproj": {
-              "projectPath": "/Users/luciant/RiderProjects/automapper/automapper/automapper.csproj"
+            "C:\\Projects\\automapper\\automapper\\automapper.csproj": {
+              "projectPath": "C:\\Projects\\automapper\\automapper\\automapper.csproj"
             }
           }
         }
@@ -5912,7 +5914,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }
