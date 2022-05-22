@@ -45,8 +45,6 @@ namespace automapper
 
         private bool CheckIfMappingIsAllowed(string from, string to)
         {
-            if (_allowedMappings.Count == 0) throw new Exception("No relationships have been provided");
-
             var map = _allowedMappings.Where(_ =>
                 _.From == from && _.To == to).Select(_ => _).FirstOrDefault();
 

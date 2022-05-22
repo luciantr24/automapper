@@ -16,7 +16,7 @@ namespace automapper_unit_tests
             _userTestData = new User
             {
                 Id = 10000,
-                Name = "Test User Name",
+                Name = "Test Name",
                 Status = true
             };
         }
@@ -48,7 +48,7 @@ namespace automapper_unit_tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Source or Destionation can't be null or empty")]
+        [ExpectedException(typeof(Exception), "Source and Destionation can't be null or empty")]
         public void Mapping_Settings_Null_Or_Empty()
         {
             var autoMapper = new AutoMapper(config => { });

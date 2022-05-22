@@ -14,7 +14,6 @@ C:\Projects\automapper\automapper\bin\Debug\net5.0\automapper.deps.json
 C:\Projects\automapper\automapper\bin\Debug\net5.0\automapper.dll
 C:\Projects\automapper\automapper\bin\Debug\net5.0\ref\automapper.dll
 C:\Projects\automapper\automapper\bin\Debug\net5.0\automapper.pdb
-C:\Projects\automapper\automapper\obj\Debug\net5.0\automapper.csproj.AssemblyReference.cache
 C:\Projects\automapper\automapper\obj\Debug\net5.0\automapper.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\automapper\automapper\obj\Debug\net5.0\automapper.AssemblyInfoInputs.cache
 C:\Projects\automapper\automapper\obj\Debug\net5.0\automapper.AssemblyInfo.cs
