@@ -13,8 +13,10 @@ namespace automapper
         public AutoMapper(Action<MapperSetting> action)
         {
             var mapperSetting = new MapperSetting();
-            
+
             action.Invoke(mapperSetting);
+            
+            mapperSetting.CheckMapperSettings();
             
             _allowedMappings.Add(mapperSetting);
         }

@@ -101,12 +101,12 @@
 /Users/luciant/RiderProjects/automapper/automapper-unit-tests/obj/Debug/net5.0/automapper-unit-tests.genruntimeconfig.cache
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\CoverletSourceRootsMapping
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\testhost.dll
+C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\testhost.exe
+C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\testhost.exe
-C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\automapper-unit-tests.deps.json
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\automapper-unit-tests.runtimeconfig.json
 C:\Projects\automapper\automapper-unit-tests\bin\Debug\net5.0\automapper-unit-tests.runtimeconfig.dev.json
