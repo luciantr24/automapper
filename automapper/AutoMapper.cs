@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using automapper.Models;
 using Newtonsoft.Json;
 
 namespace automapper
 {
-    public class AutoMapper
+    public sealed class AutoMapper
     {
-        private readonly List<MapperSetting> _allowedMappings = new List<MapperSetting>();
+        private readonly List<Mapping> _allowedMappings = new List<Mapping>();
 
-        public AutoMapper(Action<MapperSetting> action)
+        public AutoMapper(Action<Mapping> action)
         {
-            var mapperSetting = new MapperSetting();
+            var mapperSetting = new Mapping();
 
             action.Invoke(mapperSetting);
-            
-            mapperSetting.CheckMapperSettings();
             
             _allowedMappings.Add(mapperSetting);
         }

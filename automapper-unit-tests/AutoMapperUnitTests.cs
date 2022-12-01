@@ -1,7 +1,7 @@
+using System;
 using automapper;
 using automapper_unit_tests.TestModels;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace automapper_unit_tests
 {
